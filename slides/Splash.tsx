@@ -3,7 +3,6 @@ import Typewriter from 'typewriter-effect/dist/react';
 import NewTabLink from 'components/utilities/NewTabLink';
 import Slide from 'components/Slide';
 import Clouds from 'components/Clouds';
-import Bubbles from 'components/Bubbles';
 import SocialMediaLinks from 'components/SocialMediaLinks';
 
 const TITLES = [
@@ -51,7 +50,6 @@ const Splash: FC = () => (
       </figcaption>
     </figure>
     <Clouds id="splash-clouds" />
-    <Bubbles id="splash-bubbles" />
   </Slide>
 );
 
