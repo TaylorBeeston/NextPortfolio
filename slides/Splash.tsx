@@ -19,11 +19,15 @@ const TITLES = [
 const Splash: FC = () => (
   <Slide link="top" sky top={false}>
     <figure className="absolute z-10 w-full sm:w-1/2">
-      <img
-        className="w-48 h-48 mb-8 ml-2 rounded-full shadow-inner"
-        src="Me.jpg"
-        alt="Me"
-      />
+      <picture>
+        <source srcSet={require('../assets/Me.jpg?webp')} type="image/webp" />
+        <source srcSet={require('../assets/Me.jpg?')} type="image/jpeg" />
+        <img
+          className="w-48 h-48 mb-8 ml-2 rounded-full shadow-inner"
+          src={require('../assets/Me.jpg')}
+          alt="Me"
+        />
+      </picture>
       <figcaption className="px-8 py-4 rounded-lg backdrop-blur-3">
         <h1 className="text-4xl subpixel-antialiased font-medium tracking-wide text-black dark:text-white">
           Taylor Beeston{' '}
@@ -46,8 +50,8 @@ const Splash: FC = () => (
         </NewTabLink>
       </figcaption>
     </figure>
-    <Clouds />
-    <Bubbles />
+    <Clouds id="splash-clouds" />
+    <Bubbles id="splash-bubbles" />
   </Slide>
 );
 

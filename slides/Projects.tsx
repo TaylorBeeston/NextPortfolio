@@ -6,7 +6,7 @@ import Clouds from 'components/Clouds';
 const Projects: FC = () => (
   <Slide title="Projects" link="projects" sky>
     <ProjectsTable />
-    <Clouds />
+    <Clouds id="projects-clouds" />
   </Slide>
 );
 

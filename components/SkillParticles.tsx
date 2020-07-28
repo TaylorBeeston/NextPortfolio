@@ -34,7 +34,6 @@ const SkillParticles: FC<SkillParticlesProps> = ({ icon }) => (
             duration: 2,
             opacity: 0.8,
             size: 40,
-            speed: 3,
           },
           push: {
             quantity: 4,

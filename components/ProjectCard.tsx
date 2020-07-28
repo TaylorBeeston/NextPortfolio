@@ -34,6 +34,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         href={github}
         target="_blank"
         rel="noopener noreferrer"
+        ariaLabel={`Github link for ${title}`}
       />
     </article>
   );

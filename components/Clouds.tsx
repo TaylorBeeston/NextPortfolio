@@ -1,8 +1,13 @@
 import React, { FC } from 'react';
 import Particles from 'react-tsparticles';
 
-const Clouds: FC = () => (
+type CloudsParams = {
+  id?: string;
+};
+
+const Clouds: FC<CloudsParams> = ({ id }) => (
   <Particles
+    id={id}
     className="absolute top-0 left-0 z-0 w-full h-full"
     params={{
       background: {
@@ -30,7 +35,6 @@ const Clouds: FC = () => (
             duration: 2,
             opacity: 0.8,
             size: 40,
-            speed: 3,
           },
           push: {
             quantity: 4,

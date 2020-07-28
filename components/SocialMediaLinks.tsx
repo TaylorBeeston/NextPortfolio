@@ -12,16 +12,28 @@ const SocialMediaLinks: FC = () => {
         isDarkMode ? 'text-gray-100' : 'text-gray-900'
       }`}
     >
-      <NewTabLink href="https://github.com/TaylorBeeston">
+      <NewTabLink
+        aria-label="Link to my Github"
+        href="https://github.com/TaylorBeeston"
+      >
         <Icon className="w-8 h-8 mr-2" name="github" />
       </NewTabLink>
-      <NewTabLink href="https://www.linkedin.com/in/taylor-beeston">
+      <NewTabLink
+        aria-label="Link to my LinkedIn"
+        href="https://www.linkedin.com/in/taylor-beeston"
+      >
         <Icon className="w-8 h-8 mt-px mr-2" name="linkedin" />
       </NewTabLink>
-      <NewTabLink href="https://dev.to/taylorbeeston">
+      <NewTabLink
+        aria-label="Link to my Dev.to Account"
+        href="https://dev.to/taylorbeeston"
+      >
         <Icon className="w-8 h-8 mr-2" name="dev" />
       </NewTabLink>
-      <NewTabLink href="mailto:beeston.taylor@gmail.com">
+      <NewTabLink
+        aria-label="Link to send me an e-mail"
+        href="mailto:beeston.taylor@gmail.com"
+      >
         <Icon className="w-8 h-8 mt-px mr-2" name="email" />
       </NewTabLink>
     </section>

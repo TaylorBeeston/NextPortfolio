@@ -1,8 +1,13 @@
 import React, { FC } from 'react';
 import Particles from 'react-tsparticles';
 
-const Bubbles: FC = () => (
+type BubblesParams = {
+  id?: string;
+};
+
+const Bubbles: FC<BubblesParams> = ({ id }) => (
   <Particles
+    id={id}
     className="absolute w-full h-full"
     params={{
       background: {
@@ -30,7 +35,6 @@ const Bubbles: FC = () => (
             duration: 2,
             opacity: 0.8,
             size: 40,
-            speed: 3,
           },
           push: {
             quantity: 4,

@@ -8,17 +8,25 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^8.0.0",
     "next": "latest",
+    "next-compose-plugins": "^2.2.0",
+    "next-optimized-images": "^2.6.1",
+    "next-pwa": "^3.1.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-gist": "^1.2.2",
     "react-github-corner": "^2.3.0",
     "react-svg": "^11.0.30",
-    "react-tsparticles": "^1.16.3",
+    "react-tsparticles": "^1.17.5",
     "tailwindcss": "^1.4.6",
     "tailwindcss-dark-mode": "^1.1.5",
     "tailwindcss-filters": "^3.0.0",
-    "typewriter-effect": "^2.13.1"
+    "tsparticles": "^1.17.5",
+    "typewriter-effect": "^2.13.1",
+    "webp-loader": "^0.6.0"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",
@@ -37,7 +45,7 @@
     "eslint-plugin-react": "^7.20.3",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.0.5",
-    "typescript": "3.7.3"
+    "typescript": "^3.9.7"
   },
   "license": "ISC"
 }

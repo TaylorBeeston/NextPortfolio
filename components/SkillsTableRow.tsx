@@ -10,7 +10,7 @@ const SkillsTableRow: FC<SkillCategory> = ({ title, skills }) => (
     </h1>
     <div className="flex flex-wrap items-center p-2 mb-2 bg-texture justify-evenly">
       {skills.map(({ id, name, icon }) => (
-        <Link key={id} href={`skills/${id}`}>
+        <Link key={id} href="skills/[id]" as={`skills/${id}`}>
           <a className="p-2 m-2 bg-blue-200 border rounded cursor-pointer dark:bg-gray-700 bg-opacity-75 backdrop-blur-2 shadow-sm hover:border-green-300 hover:bg-gray-100 dark-hover:bg-gray-600 transition duration-75">
             <figure className="flex-col flex-center">
               <Icon name={icon} />

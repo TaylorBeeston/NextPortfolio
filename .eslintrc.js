@@ -25,6 +25,8 @@ module.exports = {
       'warn',
       { extensions: ['.js', '.jsx', '.tsx'] },
     ],
+    'global-require': ['off'],
+    'import/no-unresolved': [2, { ignore: ['\\.(png|jpg|svg)\\?(webp)$'] }],
     'max-len': [
       'warn',
       {

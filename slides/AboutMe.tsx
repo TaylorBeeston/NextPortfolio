@@ -8,11 +8,18 @@ const AboutMe: FC = () => (
     extraStyles="min-h-0 sm:min-h-screen pb-4"
   >
     <article className="container justify-center flex-grow min-h-0 sm:min-h-4/5-screen grid grid-cols-1 sm:grid-cols-2">
-      <img
-        className="relative hidden object-cover object-top w-full h-full rounded-l shadow-inner sm:block"
-        src="/AboutMe.jpg"
-        alt="Me and my family"
-      />
+      <picture>
+        <source
+          srcSet={require('../assets/AboutMe.jpg?webp')}
+          type="image/webp"
+        />
+        <source srcSet={require('../assets/AboutMe.jpg?')} type="image/jpeg" />
+        <img
+          className="relative hidden object-cover object-top w-full h-full rounded-l shadow-inner sm:block"
+          src={require('../assets/AboutMe.jpg')}
+          alt="Me and my family"
+        />
+      </picture>
       <section className="p-4 bg-white rounded-r sm:bg-blue-100 max-w-text dark:bg-gray-800">
         <p className="mb-6 text-xl font-light leading-snug tracking-wide text-gray-800 dark:text-gray-200">
           I am a software engineer and full-stack web developer. As a child, I
