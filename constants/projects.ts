@@ -7,7 +7,9 @@ export const TECHNOLOGIES: { [name: string]: Technology } = {
     url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
   },
   typescript: { name: 'TypeScript', url: 'https://typescriptlang.org' },
+  rust: { name: 'Rust', url: 'https://www.rust-lang.org/' },
   webpack: { name: 'Webpack', url: 'https://webpack.js.org' },
+  esbuild: { name: 'ESBuild', url: 'https://webpack.js.org' },
   handlebars: { name: 'Handlebars', url: 'https://handlebarsjs.com' },
   sass: { name: 'SASS/SCSS', url: 'https://sass-lang.com' },
   tailwind: { name: 'TailwindCSS', url: 'https://tailwindcss.com' },
@@ -35,6 +37,23 @@ export const TECH_STACKS: { [name: string]: TechStack } = {
 };
 
 export const PROJECTS: Project[] = [
+  {
+    title: 'LearnCard',
+    description:
+      'The LearnCard SDK. This is a monorepo that I have personally led the development efforts of, and powers all LearnCard-related functionality for Learning Economy',
+    url: 'docs.learncard.com',
+    github: 'https://github.com/learningeconomy/LearnCard',
+    stack: [
+      TECHNOLOGIES.typescript,
+      TECHNOLOGIES.rust,
+      TECHNOLOGIES.esbuild,
+      TECHNOLOGIES.sass,
+      TECHNOLOGIES.tailwind,
+      TECHNOLOGIES.react,
+      TECHNOLOGIES.node,
+      TECHNOLOGIES.redis,
+    ],
+  },
   {
     title: 'The Beeston Kids (Photo Gallery)',
     description: `The Beeston Kids is a simple photo sharing app I made to share photos of my 

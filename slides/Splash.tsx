@@ -1,14 +1,18 @@
 import React, { FC } from 'react';
+import Image from 'next/image';
 import Typewriter from 'typewriter-effect/dist/react';
 import NewTabLink from 'components/utilities/NewTabLink';
 import Slide from 'components/Slide';
 import Clouds from 'components/Clouds';
 import SocialMediaLinks from 'components/SocialMediaLinks';
+import Me from 'assets/Me.jpg';
 
 const TITLES = [
+  'VP of Engineering',
   'Full-stack web dev',
   'Open-source contributor',
   'TypeScript Enthusiast',
+  'Rust Evangelist',
   'Front-End Engineer',
   'IT Specialist',
   'Dad',
@@ -18,15 +22,11 @@ const TITLES = [
 const Splash: FC = () => (
   <Slide link="top" sky top={false}>
     <figure className="absolute z-10 w-full sm:w-1/2">
-      <picture>
-        <source srcSet={require('../assets/Me.jpg?webp')} type="image/webp" />
-        <source srcSet={require('../assets/Me.jpg?')} type="image/jpeg" />
-        <img
-          className="w-48 h-48 mb-8 ml-2 rounded-full shadow-inner"
-          src={require('../assets/Me.jpg')}
-          alt="Me"
-        />
-      </picture>
+      <Image
+        src={Me}
+        className="w-48 h-48 mb-8 ml-2 rounded-full shadow-inner"
+        alt="Me"
+      />
       <figcaption className="px-8 py-4 rounded-lg backdrop-blur-3">
         <h1 className="text-4xl subpixel-antialiased font-medium tracking-wide text-black dark:text-white">
           Taylor Beeston{' '}
