@@ -64,7 +64,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { id } = params!;
-  const skill = SKILLS[id as string];
+  const skill = SKILLS[id as keyof typeof SKILLS];
 
   return { props: { skill } };
 };
