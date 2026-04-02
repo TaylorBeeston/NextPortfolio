@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taylor Beeston Resume</title>
+    <style>
+      :root {
+        --text: #142133;
+        --muted: #4f6178;
+        --accent: #1d4ed8;
+        --border: #d8e0ec;
+        --surface: #ffffff;
+        --bg: #eef3f9;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+      }
+
+      .page {
+        width: 8.5in;
+        min-height: 11in;
+        margin: 0 auto;
+        padding: 0.55in;
+        background: var(--surface);
+      }
+
+      .top {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        border-bottom: 2px solid var(--border);
+        padding-bottom: 20px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 32px;
+        line-height: 1.05;
+      }
+
+      .headline {
+        margin: 10px 0 0;
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--accent);
+        letter-spacing: 0.02em;
+      }
+
+      .summary {
+        margin: 16px 0 0;
+        max-width: 43ch;
+        color: var(--muted);
+        line-height: 1.55;
+        font-size: 14px;
+      }
+
+      .contact {
+        min-width: 235px;
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .contact strong {
+        color: var(--text);
+      }
+
+      .section {
+        margin-top: 24px;
+      }
+
+      .section-title {
+        margin: 0 0 12px;
+        font-size: 12px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 18px;
+      }
+
+      .skill-item {
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .skill-item strong {
+        display: block;
+        margin-bottom: 2px;
+        color: var(--text);
+      }
+
+      .role-block {
+        margin-top: 16px;
+      }
+
+      .role-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: baseline;
+        margin-bottom: 8px;
+      }
+
+      .role-title {
+        margin: 0;
+        font-size: 18px;
+      }
+
+      .role-meta {
+        color: var(--muted);
+        font-size: 13px;
+        text-align: right;
+      }
+
+      ul {
+        margin: 10px 0 0;
+        padding-left: 18px;
+      }
+
+      li {
+        margin-bottom: 8px;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .project {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 14px;
+      }
+
+      .project h3 {
+        margin: 0 0 6px;
+        font-size: 15px;
+      }
+
+      .project p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .edu {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: baseline;
+      }
+
+      .edu p {
+        margin: 0;
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+
+        .page {
+          margin: 0;
+          padding: 0.5in;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="top">
+        <div>
+          <h1>Taylor Beeston</h1>
+          <p class="headline">
+            VP of Engineering · Fractional Startup Engineer · React/TypeScript,
+            AI Prototypes, Product Delivery
+          </p>
+          <p class="summary">
+            Hands-on engineering leader with 5.5+ years of professional experience
+            shipping web products, AI-powered workflows, and production systems.
+            Strongest where product execution, frontend polish, backend glue, and
+            deployment reliability meet.
+          </p>
+        </div>
+        <div class="contact">
+          <div><strong>Location:</strong> Lake Stevens, Washington (remote)</div>
+          <div><strong>Email:</strong> beeston.taylor@gmail.com</div>
+          <div><strong>Website:</strong> taylorbeeston.dev</div>
+          <div><strong>LinkedIn:</strong> linkedin.com/in/taylor-beeston</div>
+          <div><strong>GitHub:</strong> github.com/TaylorBeeston</div>
+        </div>
+      </header>
+
+      <section class="section">
+        <h2 class="section-title">Core strengths</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <strong>Product engineering</strong>
+            React, Vite, TypeScript, frontend implementation, UX polish, feature delivery
+          </div>
+          <div class="skill-item">
+            <strong>Backend + platform</strong>
+            Node.js, APIs, AWS Lambda, Redis, MongoDB, Neo4j, integrations
+          </div>
+          <div class="skill-item">
+            <strong>AI + automation</strong>
+            AI feature prototyping, agent loops, internal tooling, workflow automation
+          </div>
+          <div class="skill-item">
+            <strong>Systems + leadership</strong>
+            Monorepos, CI/CD, developer experience, performance, mentoring, technical leadership
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="role-block">
+          <div class="role-header">
+            <h3 class="role-title">Learning Economy Foundation</h3>
+            <div class="role-meta">
+              VP of Engineering (Mar 2022 – Present)<br />
+              Software Engineer (Aug 2020 – Mar 2022)
+            </div>
+          </div>
+          <ul>
+            <li>
+              Lead hands-on engineering for LearnCard, an open-source lifelong learning
+              passport platform, across React/Vite, TypeScript, Node, Redis, MongoDB,
+              Neo4j, AWS Lambda, and Rust-based SSI/DID tooling.
+            </li>
+            <li>
+              Promoted to VP of Engineering after growing into technical leadership while
+              continuing to ship product, improve developer experience, and mentor a team of 4–6 engineers.
+            </li>
+            <li>
+              Helped drive migration away from a Meteor monolith to a more modular frontend
+              and backend architecture, cutting CI deployment time by roughly 75%.
+            </li>
+            <li>
+              Delivered major performance improvements, including reducing a 3+ minute query
+              to under 5 seconds and improving initial load performance from ~15 seconds to a few hundred milliseconds.
+            </li>
+            <li>
+              Built custom internal platform services, including a translations microservice
+              that reduced recurring spend from $500+/month to effectively negligible cost.
+            </li>
+            <li>
+              Developed reusable monorepo tooling and packaging workflows that improved code reuse,
+              build speed, and day-to-day shipping velocity across multiple products.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Selected projects</h2>
+        <div class="projects">
+          <article class="project">
+            <h3>LearnCard</h3>
+            <p>
+              Active maintainer and engineering lead for a large open-source monorepo powering
+              digital credential and lifelong learning products.
+            </p>
+          </article>
+          <article class="project">
+            <h3>SSI / DIDKit Rust Forks</h3>
+            <p>
+              Hands-on work with Rust-based decentralized identity tooling used inside the LearnCard ecosystem.
+            </p>
+          </article>
+          <article class="project">
+            <h3>AI workflow prototyping</h3>
+            <p>
+              Built practical AI agent loops and automation workflows with a bias toward working systems over demos.
+            </p>
+          </article>
+          <article class="project">
+            <h3>AI workflow prototyping</h3>
+            <p>
+              Built practical AI agent loops and product workflows with a bias toward reliability,
+              useful automation, and working software instead of demo-only prototypes.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="edu">
+          <div>
+            <p><strong>Liberty University</strong> · Web Development Certificate</p>
+            <p>4.0 GPA · Built a full e-commerce web app from scratch</p>
+          </div>
+          <p>Jan 2019 – Aug 2019</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
