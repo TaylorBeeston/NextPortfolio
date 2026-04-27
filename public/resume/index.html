@@ -14,9 +14,7 @@
         --bg: #eef3f9;
       }
 
-      * {
-        box-sizing: border-box;
-      }
+      * { box-sizing: border-box; }
 
       body {
         margin: 0;
@@ -29,58 +27,50 @@
         width: 8.5in;
         min-height: 11in;
         margin: 0 auto;
-        padding: 0.55in;
+        padding: 0.34in 0.42in;
         background: var(--surface);
       }
 
       .top {
-        display: flex;
-        justify-content: space-between;
-        gap: 24px;
+        display: grid;
+        grid-template-columns: 1fr 2.45in;
+        gap: 18px;
         border-bottom: 2px solid var(--border);
-        padding-bottom: 20px;
+        padding-bottom: 10px;
       }
 
       h1 {
         margin: 0;
-        font-size: 32px;
-        line-height: 1.05;
+        font-size: 28px;
+        line-height: 1;
       }
 
       .headline {
-        margin: 10px 0 0;
-        font-size: 15px;
+        margin: 6px 0 0;
+        font-size: 13px;
         font-weight: 700;
         color: var(--accent);
-        letter-spacing: 0.02em;
       }
 
       .summary {
-        margin: 16px 0 0;
-        max-width: 43ch;
+        margin: 8px 0 0;
         color: var(--muted);
-        line-height: 1.55;
-        font-size: 14px;
+        line-height: 1.34;
+        font-size: 11.5px;
       }
 
       .contact {
-        min-width: 235px;
-        font-size: 13px;
-        line-height: 1.6;
+        font-size: 11px;
+        line-height: 1.45;
       }
 
-      .contact strong {
-        color: var(--text);
-      }
-
-      .section {
-        margin-top: 24px;
-      }
+      .contact strong { color: var(--text); }
+      .section { margin-top: 12px; }
 
       .section-title {
-        margin: 0 0 12px;
-        font-size: 12px;
-        letter-spacing: 0.16em;
+        margin: 0 0 7px;
+        font-size: 10px;
+        letter-spacing: 0.14em;
         text-transform: uppercase;
         color: var(--accent);
       }
@@ -88,22 +78,18 @@
       .skills-grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px 18px;
+        gap: 6px 14px;
       }
 
       .skill-item {
-        font-size: 13px;
-        line-height: 1.5;
+        font-size: 11px;
+        line-height: 1.32;
       }
 
       .skill-item strong {
         display: block;
-        margin-bottom: 2px;
+        margin-bottom: 1px;
         color: var(--text);
-      }
-
-      .role-block {
-        margin-top: 16px;
       }
 
       .role-header {
@@ -111,54 +97,55 @@
         justify-content: space-between;
         gap: 16px;
         align-items: baseline;
-        margin-bottom: 8px;
+        margin-bottom: 4px;
       }
 
       .role-title {
         margin: 0;
-        font-size: 18px;
+        font-size: 15px;
       }
 
       .role-meta {
         color: var(--muted);
-        font-size: 13px;
+        font-size: 11px;
         text-align: right;
+        line-height: 1.3;
       }
 
       ul {
-        margin: 10px 0 0;
-        padding-left: 18px;
+        margin: 5px 0 0;
+        padding-left: 16px;
       }
 
       li {
-        margin-bottom: 8px;
+        margin-bottom: 3.5px;
         color: var(--muted);
-        font-size: 13px;
-        line-height: 1.5;
+        font-size: 11px;
+        line-height: 1.32;
       }
 
       .projects {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 16px;
+        gap: 8px;
       }
 
       .project {
         border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: 14px;
+        border-radius: 10px;
+        padding: 8px;
       }
 
       .project h3 {
-        margin: 0 0 6px;
-        font-size: 15px;
+        margin: 0 0 4px;
+        font-size: 12px;
       }
 
       .project p {
         margin: 0;
         color: var(--muted);
-        font-size: 13px;
-        line-height: 1.5;
+        font-size: 10.5px;
+        line-height: 1.3;
       }
 
       .edu {
@@ -170,19 +157,22 @@
 
       .edu p {
         margin: 0;
-        font-size: 13px;
+        font-size: 11px;
         color: var(--muted);
       }
 
-      @media print {
-        body {
-          background: #fff;
-        }
+      .note {
+        margin: 4px 0 0;
+        color: var(--muted);
+        font-size: 10.5px;
+        line-height: 1.28;
+      }
 
-        .page {
-          margin: 0;
-          padding: 0.5in;
-        }
+      @page { size: letter; margin: 0; }
+
+      @media print {
+        body { background: #fff; }
+        .page { margin: 0; }
       }
     </style>
   </head>
@@ -191,15 +181,11 @@
       <header class="top">
         <div>
           <h1>Taylor Beeston</h1>
-          <p class="headline">
-            VP of Engineering · Fractional Startup Engineer · React/TypeScript,
-            AI Prototypes, Product Delivery
-          </p>
+          <p class="headline">Platform Engineering Leader · Linux/Cloud Systems · Automation · Performance</p>
           <p class="summary">
-            Hands-on engineering leader with 5.5+ years of professional experience
-            shipping web products, AI-powered workflows, and production systems.
-            Strongest where product execution, frontend polish, backend glue, and
-            deployment reliability meet.
+            Hands-on engineering leader with 5.5+ years shipping and operating production systems.
+            Focused on distributed-system problem solving, Linux-based workflows, cloud hosting concepts,
+            automation, observability, performance tuning, documentation, and cross-functional ownership.
           </p>
         </div>
         <div class="contact">
@@ -212,95 +198,61 @@
       </header>
 
       <section class="section">
-        <h2 class="section-title">Core strengths</h2>
+        <h2 class="section-title">Platform-aligned strengths</h2>
         <div class="skills-grid">
-          <div class="skill-item">
-            <strong>Product engineering</strong>
-            React, Vite, TypeScript, frontend implementation, UX polish, feature delivery
-          </div>
-          <div class="skill-item">
-            <strong>Backend + platform</strong>
-            Node.js, APIs, AWS Lambda, Redis, MongoDB, Neo4j, integrations
-          </div>
-          <div class="skill-item">
-            <strong>AI + automation</strong>
-            AI feature prototyping, agent loops, internal tooling, workflow automation
-          </div>
-          <div class="skill-item">
-            <strong>Systems + leadership</strong>
-            Monorepos, CI/CD, developer experience, performance, mentoring, technical leadership
-          </div>
+          <div class="skill-item"><strong>Linux + cloud operations</strong>Linux-based debugging workflows, cloud-hosted systems, deployment reliability, remote operations</div>
+          <div class="skill-item"><strong>Distributed systems + storage concepts</strong>Data-backed production systems, object/block storage concepts, caching, queues, bottleneck analysis</div>
+          <div class="skill-item"><strong>Automation + scripting</strong>TypeScript/Node, Python/Bash-style automation, CI/CD, internal tooling, repeatable workflows</div>
+          <div class="skill-item"><strong>Observability + collaboration</strong>Metrics-minded debugging, technical docs/runbooks, async communication, team leadership</div>
         </div>
       </section>
 
       <section class="section">
         <h2 class="section-title">Experience</h2>
-        <div class="role-block">
-          <div class="role-header">
-            <h3 class="role-title">Learning Economy Foundation</h3>
-            <div class="role-meta">
-              VP of Engineering (Mar 2022 – Present)<br />
-              Software Engineer (Aug 2020 – Mar 2022)
-            </div>
+        <div class="role-header">
+          <h3 class="role-title">Learning Economy Foundation</h3>
+          <div class="role-meta">
+            VP of Engineering (Mar 2022 – Present)<br />
+            Software Engineer (Aug 2020 – Mar 2022)
           </div>
-          <ul>
-            <li>
-              Lead hands-on engineering for LearnCard, an open-source lifelong learning
-              passport platform, across React/Vite, TypeScript, Node, Redis, MongoDB,
-              Neo4j, AWS Lambda, and Rust-based SSI/DID tooling.
-            </li>
-            <li>
-              Promoted to VP of Engineering after growing into technical leadership while
-              continuing to ship product, improve developer experience, and mentor a team of 4–6 engineers.
-            </li>
-            <li>
-              Helped drive migration away from a Meteor monolith to a more modular frontend
-              and backend architecture, cutting CI deployment time by roughly 75%.
-            </li>
-            <li>
-              Delivered major performance improvements, including reducing a 3+ minute query
-              to under 5 seconds and improving initial load performance from ~15 seconds to a few hundred milliseconds.
-            </li>
-            <li>
-              Built custom internal platform services, including a translations microservice
-              that reduced recurring spend from $500+/month to effectively negligible cost.
-            </li>
-            <li>
-              Developed reusable monorepo tooling and packaging workflows that improved code reuse,
-              build speed, and day-to-day shipping velocity across multiple products.
-            </li>
-          </ul>
         </div>
+        <ul>
+          <li>Lead hands-on engineering for LearnCard, an open-source platform, across TypeScript/Node, React/Vite, Redis, MongoDB, Neo4j, AWS Lambda, CI/CD, and Rust-based SSI/DID tooling.</li>
+          <li>Promoted to VP of Engineering after growing into technical leadership while continuing to debug production issues, ship code, improve developer experience, and mentor 4–6 engineers.</li>
+          <li>Helped move a Meteor monolith toward modular frontend/backend systems, improving operational clarity and cutting CI deployment time by roughly 75%.</li>
+          <li>Delivered major performance improvements: reduced a 3+ minute production query to under 5 seconds and improved initial load performance from ~15 seconds to a few hundred milliseconds.</li>
+          <li>Built internal platform services and automation, including a translations microservice that reduced recurring spend from $500+/month to effectively negligible cost.</li>
+          <li>Developed reusable monorepo tooling, packaging workflows, and documentation that improved code reuse, build speed, onboarding, and day-to-day shipping velocity.</li>
+        </ul>
       </section>
 
       <section class="section">
-        <h2 class="section-title">Selected projects</h2>
+        <h2 class="section-title">Platform + operations fit</h2>
+        <ul>
+          <li><strong>Stability, scalability, performance, cost:</strong> repeated track record making production systems faster, cheaper, easier to deploy, and easier for teams to reason about.</li>
+          <li><strong>Automation:</strong> strong internal tooling and CI/CD experience; comfortable turning repeated operational work into maintainable scripts, services, and docs.</li>
+          <li><strong>Reliability:</strong> metrics-minded debugger with production performance wins; interested in storage observability, Linux internals, and cloud platform reliability.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Selected relevant work</h2>
         <div class="projects">
           <article class="project">
-            <h3>LearnCard</h3>
-            <p>
-              Active maintainer and engineering lead for a large open-source monorepo powering
-              digital credential and lifelong learning products.
-            </p>
+            <h3>LearnCard production platform</h3>
+            <p>Active engineering lead for a large open-source monorepo powering credential and lifelong learning products.</p>
           </article>
           <article class="project">
-            <h3>SSI / DIDKit Rust Forks</h3>
-            <p>
-              Hands-on work with Rust-based decentralized identity tooling used inside the LearnCard ecosystem.
-            </p>
+            <h3>Performance + platform modernization</h3>
+            <p>Faster deploys, faster builds, major query improvements, reduced infrastructure spend, and clearer workflows.</p>
           </article>
           <article class="project">
-            <h3>AI workflow prototyping</h3>
-            <p>
-              Built practical AI agent loops and automation workflows with a bias toward working systems over demos.
-            </p>
+            <h3>Rust SSI / DIDKit forks</h3>
+            <p>Hands-on work with Rust-based decentralized identity tooling used inside the LearnCard ecosystem.</p>
           </article>
           <article class="project">
-            <h3>AI workflow prototyping</h3>
-            <p>
-              Built practical AI agent loops and product workflows with a bias toward reliability,
-              useful automation, and working software instead of demo-only prototypes.
-            </p>
+            <h3>Automation + AI workflows</h3>
+            <p>Built practical automation and agent workflows with a bias toward reliability and working systems over demos.</p>
           </article>
         </div>
       </section>
@@ -314,6 +266,10 @@
           </div>
           <p>Jan 2019 – Aug 2019</p>
         </div>
+        <p class="note">
+          Professional development focus: storage operations, Linux storage, distributed storage observability,
+          Kubernetes-adjacent infrastructure operations, and cloud platform reliability practices.
+        </p>
       </section>
     </main>
   </body>

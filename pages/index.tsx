@@ -30,74 +30,74 @@ type ExperienceItem = {
 const metrics: Metric[] = [
   {
     value: '5.5+ yrs',
-    label: 'Professional experience',
-    detail: 'Hands-on shipping products, platforms, and developer tooling.',
-  },
-  {
-    value: '20 hrs/wk',
-    label: 'Available for side consulting',
-    detail: 'Remote-first, async-friendly, and comfortable jumping on calls when useful.',
+    label: 'Engineering in production',
+    detail: 'Hands-on ownership across product systems, platform services, and developer tooling.',
   },
   {
     value: '4–6 devs',
-    label: 'Team leadership',
-    detail: 'Player-coach leadership while staying deep in the code.',
+    label: 'Technical leadership',
+    detail: 'Player-coach leadership while staying close to implementation and operations.',
   },
   {
     value: '<5 sec',
-    label: 'Performance wins',
-    detail: 'Took a 3+ minute query down to under 5 seconds.',
+    label: 'Performance tuning',
+    detail: 'Reduced a 3+ minute query to under 5 seconds in a production graph-backed system.',
+  },
+  {
+    value: '75%',
+    label: 'CI/deploy improvement',
+    detail: 'Cut deployment time dramatically by improving tooling, build flows, and release paths.',
   },
 ];
 
 const services: Service[] = [
   {
-    title: 'Fractional Startup Engineer',
+    title: 'Linux + Cloud Operations Fit',
     description:
-      'For startups that need a senior hands-on engineer to ship product without committing to a full-time hire.',
+      'I do my best work close to production: reliable infrastructure, Linux systems, cloud primitives, automation, and practical operations.',
     bullets: [
-      'React/TypeScript features and UI polish',
-      'Node APIs, backend glue, and integrations',
-      'Bug backlog cleanup and product stabilization',
+      'Comfortable on Linux-based systems and remote-first operational workflows',
+      'Experience with cloud-hosted products, APIs, caching, queues, and production debugging',
+      'Strong bias toward clear runbooks, documentation, and cross-functional communication',
     ],
   },
   {
-    title: 'AI Prototype Sprint',
+    title: 'Distributed Systems + Performance',
     description:
-      'I build practical AI features that go beyond demos and get into a usable product state quickly.',
+      'My strongest accomplishments are in making complex systems faster, more stable, and easier for teams to operate.',
     bullets: [
-      'Agent workflows and automation loops',
-      'Chat interfaces, copilots, and internal tools',
-      'Fast MVPs, eval-minded iteration, and deployment',
+      'Reduced a 3+ minute query to under 5 seconds',
+      'Improved initial load performance from ~15 seconds to a few hundred milliseconds',
+      'Helped move a Meteor monolith toward more modular frontend and backend architecture',
     ],
   },
   {
-    title: 'Deploy & Stabilize Sprint',
+    title: 'Automation + Reliability Mindset',
     description:
-      'When the app mostly works but production, CI/CD, or environment rough edges keep slowing the team down.',
+      'I like improving operational systems over time, not just keeping them alive. That matches how I approach engineering work.',
     bullets: [
-      'AWS Lambda and deployment cleanup',
-      'Redis, caching, and environment debugging',
-      'Developer experience, build speed, and release reliability',
+      'Built internal services and tooling that reduced recurring cost and manual work',
+      'Improved monorepo workflows, CI/CD speed, and day-to-day developer experience',
+      'Interested in going deeper on storage observability, Linux internals, and cloud infrastructure operations',
     ],
   },
 ];
 
 const projects: Project[] = [
   {
-    title: 'LearnCard',
+    title: 'LearnCard Production Platform',
     description:
-      'Open-source lifelong learning passport platform. I have led major development efforts across the monorepo and the systems that power LearnCard products.',
+      'Open-source lifelong learning passport platform where I lead hands-on engineering across a large monorepo and the production systems that power LearnCard products.',
     stack: [
-      'Vite',
-      'React',
+      'Linux workflows',
       'TypeScript',
       'Node',
-      'Neo4j',
-      'MongoDB',
       'Redis',
+      'MongoDB',
+      'Neo4j',
       'AWS Lambda',
       'Rust',
+      'CI/CD',
     ],
     links: [
       { label: 'GitHub', href: 'https://github.com/learningeconomy/LearnCard' },
@@ -105,25 +105,25 @@ const projects: Project[] = [
     ],
   },
   {
-    title: 'SSI / DIDKit Rust Work',
+    title: 'Performance + Platform Modernization',
+    description:
+      'Drove practical reliability and performance wins: faster deploys, faster local builds, major query improvements, and reduced recurring infrastructure spend.',
+    stack: ['Distributed systems', 'Performance tuning', 'CI/CD', 'Internal tooling'],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/TaylorBeeston' },
+      { label: 'Resume', href: '/resume/index.html' },
+    ],
+  },
+  {
+    title: 'Rust SSI / DIDKit Work',
     description:
       'Hands-on work with Rust-based decentralized identity tooling through my ssi and didkit forks, integrated as submodules in the LearnCard ecosystem.',
-    stack: ['Rust', 'SSI', 'WASM', 'Developer Tooling'],
+    stack: ['Rust', 'WASM', 'Systems learning', 'Developer tooling'],
     links: [
       { label: 'ssi fork', href: 'https://github.com/TaylorBeeston/ssi' },
       { label: 'didkit fork', href: 'https://github.com/TaylorBeeston/didkit' },
     ],
   },
-  {
-    title: 'AI Workflow Prototyping',
-    description:
-      'Built agent loops and AI-powered workflows that actually work in practice — with a bias toward useful automation, clear product behavior, and fast iteration instead of demo-only prototypes.',
-    stack: ['LLM workflows', 'Agent loops', 'Automation', 'Product prototyping'],
-    links: [
-      { label: 'GitHub', href: 'https://github.com/TaylorBeeston' },
-      { label: 'Contact me', href: 'mailto:beeston.taylor@gmail.com' },
-    ],
-  }
 ];
 
 const experience: ExperienceItem[] = [
@@ -131,30 +131,33 @@ const experience: ExperienceItem[] = [
     title: 'VP of Engineering · Learning Economy Foundation',
     period: 'Mar 2022 — Present',
     body:
-      'Leading engineering while staying hands-on in the codebase: shipping product, improving developer experience, mentoring engineers, and keeping LearnCard systems moving smoothly.',
+      'Lead engineering while staying hands-on: production debugging, platform improvements, developer tooling, performance work, mentoring engineers, and keeping systems moving reliably.',
   },
   {
     title: 'Software Engineer · Learning Economy Foundation',
     period: 'Aug 2020 — Mar 2022',
     body:
-      'Built across frontend, backend, infrastructure, performance, and developer tooling, then grew into broader technical ownership and leadership.',
+      'Built across frontend, backend, infrastructure-adjacent services, CI/CD, performance, and internal tooling before growing into broader technical ownership.',
   },
 ];
 
 const stack = [
-  'React',
-  'Vite',
+  'Linux',
+  'Distributed systems',
+  'Cloud hosting concepts',
+  'Object/block storage concepts',
+  'Performance tuning',
+  'Observability mindset',
+  'Python/Bash scripting',
   'TypeScript',
   'Node.js',
   'Rust',
-  'AWS Lambda',
   'Redis',
   'MongoDB',
   'Neo4j',
+  'AWS Lambda',
   'CI/CD',
-  'Monorepos',
-  'AI agent loops',
-  'Open source',
+  'Technical documentation',
 ];
 
 const externalLinkProps = {
@@ -165,10 +168,10 @@ const externalLinkProps = {
 const HomePage: FC = () => (
   <>
     <Head>
-      <title>Taylor Beeston | Fractional Startup Engineer</title>
+      <title>Taylor Beeston | Platform Engineering Leader</title>
       <meta
         name="description"
-        content="Taylor Beeston is a VP of Engineering and fractional startup engineer focused on React/TypeScript product work, AI prototypes, and production-ready systems."
+        content="Taylor Beeston is an engineering leader with experience in cloud-adjacent systems, distributed systems, automation, performance, CI/CD, developer tooling, and production reliability."
       />
     </Head>
 
@@ -176,7 +179,7 @@ const HomePage: FC = () => (
 
     <main className="site-shell">
       <nav className="top-nav">
-        <a href="#services">Services</a>
+        <a href="#fit">Platform fit</a>
         <a href="#work">Work</a>
         <a href="#experience">Experience</a>
         <a href="#about">About</a>
@@ -185,19 +188,17 @@ const HomePage: FC = () => (
 
       <section className="hero-section">
         <div className="hero-copy">
-          <p className="eyebrow">Remote fractional engineering · async-friendly · product-focused</p>
-          <h1>I help startups ship product fast.</h1>
+          <p className="eyebrow">Platform-minded engineering leader · Linux/cloud systems · remote-first</p>
+          <h1>I make production systems faster, steadier, and easier to operate.</h1>
           <p className="hero-lead">
-            I&apos;m Taylor Beeston — a hands-on VP of Engineering and startup engineer who
-            builds React/TypeScript products, prototypes AI features, and smooths out the
-            backend and deployment work needed to get software running well in production.
+            I&apos;m Taylor Beeston — a hands-on engineering leader who likes the operational side of software: production debugging, distributed-system problem solving, automation, performance tuning, and clear technical ownership in a fast-moving open-source platform.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="mailto:beeston.taylor@gmail.com">
-              Start a conversation
+              Contact Taylor
             </a>
-            <a className="button button-secondary" href="/resume/index.html">
-              View resume
+            <a className="button button-secondary" href="/resume/TaylorBeeston.pdf">
+              Download resume
             </a>
           </div>
           <div className="social-strip" aria-label="Profile links">
@@ -207,11 +208,11 @@ const HomePage: FC = () => (
             <a href="https://www.linkedin.com/in/taylor-beeston" {...externalLinkProps}>
               LinkedIn
             </a>
-            <a href="https://dev.to/taylorbeeston" {...externalLinkProps}>
-              Dev.to
-            </a>
             <a href="https://docs.learncard.com" {...externalLinkProps}>
               LearnCard docs
+            </a>
+            <a href="https://dev.to/taylorbeeston" {...externalLinkProps}>
+              Dev.to
             </a>
           </div>
         </div>
@@ -224,10 +225,9 @@ const HomePage: FC = () => (
           />
           <div className="hero-card-body">
             <p className="hero-card-kicker">Best fit</p>
-            <h2>Fractional Startup Engineer</h2>
+            <h2>Platform engineering + production systems</h2>
             <p>
-              Great for startups that need 5–20 hours/week of senior engineering help to
-              ship features, prototype AI, or clean up production headaches.
+              I am strongest where software meets operations: Linux workflows, cloud-hosted systems, automation, observability, performance, documentation, and reliable delivery.
             </p>
           </div>
         </aside>
@@ -243,13 +243,12 @@ const HomePage: FC = () => (
         ))}
       </section>
 
-      <section className="content-section" id="services">
+      <section className="content-section" id="fit">
         <div className="section-heading">
-          <p className="eyebrow">How I can help</p>
-          <h2>Services built for startup teams that need momentum.</h2>
+          <p className="eyebrow">Platform fit</p>
+          <h2>Why my background maps to platform and infrastructure work.</h2>
           <p>
-            I do my best work with small teams that need someone practical, fast, and
-            comfortable owning the last mile between idea and deployed product.
+            My strongest experience is in the habits platform teams need: stability, scalability, performance, automation, metrics-minded debugging, documentation, and cross-functional technical ownership.
           </p>
         </div>
         <div className="card-grid">
@@ -270,7 +269,7 @@ const HomePage: FC = () => (
       <section className="content-section" id="work">
         <div className="section-heading">
           <p className="eyebrow">Selected work</p>
-          <h2>Proof that I like making real things work.</h2>
+          <h2>Relevant proof: production ownership, not demo projects.</h2>
         </div>
         <div className="stacked-grid">
           {projects.map((project) => (
@@ -315,22 +314,21 @@ const HomePage: FC = () => (
         <div className="impact-panel">
           <h3>Selected impact</h3>
           <ul>
-            <li>Promoted to VP of Engineering after growing into technical leadership.</li>
+            <li>Promoted to VP of Engineering after growing into technical leadership while remaining hands-on.</li>
             <li>
-              Led a migration away from a Meteor monolith and helped modernize frontend,
-              backend, and build workflows.
+              Helped migrate away from a Meteor monolith toward more modular frontend and backend architecture.
             </li>
             <li>
-              Reduced CI deployment time by roughly 75% and dramatically improved local build
-              speed with better tooling.
+              Reduced CI deployment time by roughly 75% and improved local build speed with better tooling.
             </li>
             <li>
-              Cut a 3+ minute query to under 5 seconds and improved initial load performance
-              from ~15 seconds to a few hundred milliseconds.
+              Cut a 3+ minute production query to under 5 seconds and improved initial load performance from ~15 seconds to a few hundred milliseconds.
             </li>
             <li>
-              Built a custom translations microservice that reduced recurring cost from $500+
-              per month to effectively negligible spend.
+              Built a custom translations microservice that reduced recurring cost from $500+ per month to effectively negligible spend.
+            </li>
+            <li>
+              Maintained clear technical documentation, reusable packages, and async collaboration patterns across a distributed team.
             </li>
           </ul>
         </div>
@@ -339,26 +337,24 @@ const HomePage: FC = () => (
       <section className="content-section two-column" id="about">
         <article className="info-card info-card-large">
           <p className="eyebrow">About me</p>
-          <h2>I like getting things up, running, and deployed.</h2>
+          <h2>I like the operational side of engineering.</h2>
           <p>
-            I&apos;m strongest when a team has momentum to recover: a product backlog to burn
-            down, an AI idea that needs to become real software, or infrastructure and build
-            issues that are slowing everybody down.
+            I enjoy the work that keeps a platform usable: debugging production issues, making
+            slow paths fast, improving deployment reliability, writing down what the team learns,
+            and building automation so the same problem does not keep coming back.
           </p>
           <p>
-            My toolkit spans React, Vite, TypeScript, Node, Redis, MongoDB, Neo4j, AWS
-            Lambda, and Rust. I enjoy building visible product work, especially when there&apos;s
-            a frontier-tech angle and a clear path to shipping.
+            I am especially interested in infrastructure work that is close to the systems layer while still being software-defined: Linux, storage concepts, networking, virtualization, Kubernetes, metrics, alerting, and cloud operations.
           </p>
           <p>
-            I&apos;m based in Washington, work remotely, and prefer async-heavy engagements with
-            lightweight calls when they help unblock execution.
+            I am based in Lake Stevens, Washington, work well remotely, and can collaborate across
+            engineering, operations, and product stakeholders without needing heavy supervision.
           </p>
         </article>
 
         <article className="info-card info-card-large">
           <p className="eyebrow">Tech + domain fit</p>
-          <h2>Stack I work in regularly</h2>
+          <h2>Technical strengths</h2>
           <div className="badge-row">
             {stack.map((item) => (
               <span className="badge" key={item}>
@@ -367,22 +363,20 @@ const HomePage: FC = () => (
             ))}
           </div>
           <div className="availability-card">
-            <h3>Ideal engagement</h3>
+            <h3>Current learning focus</h3>
             <p>
-              5–20 hours/week, remote, startup-friendly, and scoped around shipping features,
-              AI prototypes, or stabilizing product and deployment workflows.
+              Deepening hands-on knowledge of storage operations, Linux storage internals, infrastructure observability, and cloud platform reliability.
             </p>
           </div>
         </article>
       </section>
 
       <section className="content-section cta-section" id="contact">
-        <p className="eyebrow">Open for side consulting</p>
-        <h2>Looking for your first fast-moving extra set of senior hands?</h2>
+        <p className="eyebrow">Open to the right full-time role</p>
+        <h2>Looking for a platform-minded engineer who can learn fast and own outcomes?</h2>
         <p>
-          If you need product shipped, AI functionality prototyped, or a rough deployment
-          situation made sane, send me a note. I&apos;m aiming for focused remote engagements that
-          turn into visible progress quickly.
+          I bring production engineering judgment, performance instincts, documentation habits,
+          and a strong desire to go deeper in cloud infrastructure and platform operations.
         </p>
         <div className="hero-actions hero-actions-center">
           <a className="button button-primary" href="mailto:beeston.taylor@gmail.com">
