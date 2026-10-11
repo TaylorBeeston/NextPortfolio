@@ -22,6 +22,10 @@ export const TECHNOLOGIES: { [name: string]: Technology } = {
   redis: { name: 'Redis', url: 'https://redis.io' },
   rails: { name: 'Ruby on Rails', url: 'https://rubyonrails.org' },
   next: { name: 'Next.js', url: 'https://nextjs.org' },
+  python: { name: 'Python', url: 'https://www.python.org' },
+  wangp: { name: 'WanGP', url: 'https://github.com/deepbeepmeep/Wan2GP' },
+  ffmpeg: { name: 'FFmpeg', url: 'https://ffmpeg.org' },
+  playwright: { name: 'Playwright', url: 'https://playwright.dev' },
 };
 
 export const TECH_STACKS: { [name: string]: TechStack } = {
@@ -37,6 +41,24 @@ export const TECH_STACKS: { [name: string]: TechStack } = {
 };
 
 export const PROJECTS: Project[] = [
+  {
+    title: 'Orch3stra',
+    description: `A self-hosted AI filmmaking studio that turns a story and cast into a rendered short film
+      using locally run video models through WanGP. A browser editor covers story, references, voices,
+      coverage planning, a timeline and a finishing room, while a Node.js server and a headless Python
+      worker drive WanGP renders with live progress, ETA estimates and recovery from failed or cancelled jobs.`,
+    github: 'https://github.com/TaylorBeeston/orch3stra',
+    // Repo is not public yet; flip to true (or remove) once it is released.
+    githubPublic: false,
+    stack: [
+      TECHNOLOGIES.node,
+      TECHNOLOGIES.javascript,
+      TECHNOLOGIES.python,
+      TECHNOLOGIES.wangp,
+      TECHNOLOGIES.ffmpeg,
+      TECHNOLOGIES.playwright,
+    ],
+  },
   {
     title: 'LearnCard',
     description:

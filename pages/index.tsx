@@ -30,8 +30,8 @@ type ExperienceItem = {
 const metrics: Metric[] = [
   {
     value: '5.5+ yrs',
-    label: 'Engineering in production',
-    detail: 'Hands-on ownership across product systems, platform services, and developer tooling.',
+    label: 'Professional experience',
+    detail: 'Hands-on shipping products, platforms, and developer tooling.',
   },
   {
     value: '4–6 devs',
@@ -52,44 +52,43 @@ const metrics: Metric[] = [
 
 const services: Service[] = [
   {
-    title: 'Linux + Cloud Operations Fit',
+    title: 'Engineering Leadership at LearnCard',
     description:
-      'I do my best work close to production: reliable infrastructure, Linux systems, cloud primitives, automation, and practical operations.',
+      'VP of Engineering at the Learning Economy Foundation since 2022 (on the team since 2020), leading a player-coach team while staying hands-on in the code.',
     bullets: [
-      'Comfortable on Linux-based systems and remote-first operational workflows',
-      'Experience with cloud-hosted products, APIs, caching, queues, and production debugging',
-      'Strong bias toward clear runbooks, documentation, and cross-functional communication',
+      'Own engineering across the open-source LearnCard monorepo and products',
+      'TypeScript/Node services, React frontends, and Rust-based SSI/DID tooling',
+      'Mentoring engineers and keeping delivery fast and reliable',
     ],
   },
   {
-    title: 'Distributed Systems + Performance',
+    title: 'Systems + Graphics',
     description:
-      'My strongest accomplishments are in making complex systems faster, more stable, and easier for teams to operate.',
+      'I enjoy work close to the metal and the pixels, across compiled and interpreted languages.',
     bullets: [
-      'Reduced a 3+ minute query to under 5 seconds',
-      'Improved initial load performance from ~15 seconds to a few hundred milliseconds',
-      'Helped move a Meteor monolith toward more modular frontend and backend architecture',
+      'Rust and C++ for performance-sensitive code',
+      'Shader programming and real-time graphics',
+      'TypeScript/Node and Ruby for product and tooling work',
     ],
   },
   {
-    title: 'Automation + Reliability Mindset',
+    title: 'AI/ML',
     description:
-      'I like improving operational systems over time, not just keeping them alive. That matches how I approach engineering work.',
+      'Hands-on AI/ML work, from training-data feedback to running models locally.',
     bullets: [
-      'Built internal services and tooling that reduced recurring cost and manual work',
-      'Improved monorepo workflows, CI/CD speed, and day-to-day developer experience',
-      'Interested in going deeper on storage observability, Linux internals, and cloud infrastructure operations',
+      'RLHF and model evaluation work',
+      'Computer vision and local AI video generation',
+      'Agent-orchestrated building: coordinating AI agents to plan, write, and verify software',
     ],
   },
 ];
 
 const projects: Project[] = [
   {
-    title: 'LearnCard Production Platform',
+    title: 'LearnCard',
     description:
-      'Open-source lifelong learning passport platform where I lead hands-on engineering across a large monorepo and the production systems that power LearnCard products.',
+      'Open-source lifelong learning passport platform where I lead hands-on engineering across a large monorepo and the systems that power LearnCard products.',
     stack: [
-      'Linux workflows',
       'TypeScript',
       'Node',
       'Redis',
@@ -105,20 +104,19 @@ const projects: Project[] = [
     ],
   },
   {
-    title: 'Performance + Platform Modernization',
+    title: 'Orch3stra',
     description:
-      'Drove practical reliability and performance wins: faster deploys, faster local builds, major query improvements, and reduced recurring infrastructure spend.',
-    stack: ['Distributed systems', 'Performance tuning', 'CI/CD', 'Internal tooling'],
-    links: [
-      { label: 'GitHub', href: 'https://github.com/TaylorBeeston' },
-      { label: 'Resume', href: '/resume/index.html' },
-    ],
+      'A self-hosted AI filmmaking studio that turns a story and cast into a rendered short film using locally run video models through WanGP. A browser editor covers story, references, voices, coverage planning, a timeline and a finishing room, while a Node.js server and a headless Python worker drive renders with live progress, ETA estimates and recovery from failed or cancelled jobs.',
+    stack: ['Node.js', 'JavaScript', 'Python', 'WanGP', 'FFmpeg', 'Playwright', 'LLM planning'],
+    // GitHub link hidden until the repo is public. On release, add:
+    // { label: 'GitHub', href: 'https://github.com/TaylorBeeston/orch3stra' }
+    links: [],
   },
   {
     title: 'Rust SSI / DIDKit Work',
     description:
       'Hands-on work with Rust-based decentralized identity tooling through my ssi and didkit forks, integrated as submodules in the LearnCard ecosystem.',
-    stack: ['Rust', 'WASM', 'Systems learning', 'Developer tooling'],
+    stack: ['Rust', 'SSI', 'WASM', 'Developer tooling'],
     links: [
       { label: 'ssi fork', href: 'https://github.com/TaylorBeeston/ssi' },
       { label: 'didkit fork', href: 'https://github.com/TaylorBeeston/didkit' },
@@ -131,33 +129,34 @@ const experience: ExperienceItem[] = [
     title: 'VP of Engineering · Learning Economy Foundation',
     period: 'Mar 2022 — Present',
     body:
-      'Lead engineering while staying hands-on: production debugging, platform improvements, developer tooling, performance work, mentoring engineers, and keeping systems moving reliably.',
+      'Leading engineering while staying hands-on in the codebase: shipping product, improving developer experience, mentoring engineers, and keeping LearnCard systems moving smoothly.',
   },
   {
     title: 'Software Engineer · Learning Economy Foundation',
     period: 'Aug 2020 — Mar 2022',
     body:
-      'Built across frontend, backend, infrastructure-adjacent services, CI/CD, performance, and internal tooling before growing into broader technical ownership.',
+      'Built across frontend, backend, infrastructure, performance, and developer tooling, then grew into broader technical ownership and leadership.',
   },
 ];
 
 const stack = [
-  'Linux',
-  'Distributed systems',
-  'Cloud hosting concepts',
-  'Object/block storage concepts',
-  'Performance tuning',
-  'Observability mindset',
-  'Python/Bash scripting',
   'TypeScript',
   'Node.js',
+  'React',
   'Rust',
+  'C++',
+  'Ruby',
+  'Shaders',
+  'AI/ML',
+  'RLHF',
+  'Computer vision',
+  'Local AI video generation',
+  'Agent orchestration',
   'Redis',
   'MongoDB',
   'Neo4j',
   'AWS Lambda',
-  'CI/CD',
-  'Technical documentation',
+  'Open source',
 ];
 
 const externalLinkProps = {
@@ -168,10 +167,10 @@ const externalLinkProps = {
 const HomePage: FC = () => (
   <>
     <Head>
-      <title>Taylor Beeston | Platform Engineering Leader</title>
+      <title>Taylor Beeston | VP of Engineering at LearnCard</title>
       <meta
         name="description"
-        content="Taylor Beeston is an engineering leader with experience in cloud-adjacent systems, distributed systems, automation, performance, CI/CD, developer tooling, and production reliability."
+        content="Taylor Beeston is VP of Engineering at the Learning Economy Foundation (LearnCard), building in TypeScript/Node, Rust, C++, Ruby and shaders, with AI/ML work spanning RLHF, computer vision, local AI video generation and agent-orchestrated software."
       />
     </Head>
 
@@ -179,7 +178,7 @@ const HomePage: FC = () => (
 
     <main className="site-shell">
       <nav className="top-nav">
-        <a href="#fit">Platform fit</a>
+        <a href="#focus">Focus</a>
         <a href="#work">Work</a>
         <a href="#experience">Experience</a>
         <a href="#about">About</a>
@@ -188,10 +187,10 @@ const HomePage: FC = () => (
 
       <section className="hero-section">
         <div className="hero-copy">
-          <p className="eyebrow">Platform-minded engineering leader · Linux/cloud systems · remote-first</p>
-          <h1>I make production systems faster, steadier, and easier to operate.</h1>
+          <p className="eyebrow">VP of Engineering · LearnCard · TypeScript, Rust, C++, AI/ML</p>
+          <h1>I lead engineering and build across the stack, from shaders to AI.</h1>
           <p className="hero-lead">
-            I&apos;m Taylor Beeston — a hands-on engineering leader who likes the operational side of software: production debugging, distributed-system problem solving, automation, performance tuning, and clear technical ownership in a fast-moving open-source platform.
+            I&apos;m Taylor Beeston — VP of Engineering at the Learning Economy Foundation, where I&apos;ve worked on LearnCard since 2020. I write TypeScript/Node, Rust, C++, Ruby and shaders, and I work on AI/ML: RLHF, computer vision, local AI video generation, and building software with orchestrated AI agents.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="mailto:beeston.taylor@gmail.com">
@@ -224,10 +223,10 @@ const HomePage: FC = () => (
             className="hero-avatar"
           />
           <div className="hero-card-body">
-            <p className="hero-card-kicker">Best fit</p>
-            <h2>Platform engineering + production systems</h2>
+            <p className="hero-card-kicker">Currently</p>
+            <h2>VP of Engineering, Learning Economy Foundation</h2>
             <p>
-              I am strongest where software meets operations: Linux workflows, cloud-hosted systems, automation, observability, performance, documentation, and reliable delivery.
+              Leading LearnCard engineering since 2022, and building AI/ML and graphics projects on the side.
             </p>
           </div>
         </aside>
@@ -243,12 +242,12 @@ const HomePage: FC = () => (
         ))}
       </section>
 
-      <section className="content-section" id="fit">
+      <section className="content-section" id="focus">
         <div className="section-heading">
-          <p className="eyebrow">Platform fit</p>
-          <h2>Why my background maps to platform and infrastructure work.</h2>
+          <p className="eyebrow">Focus</p>
+          <h2>What I work on.</h2>
           <p>
-            My strongest experience is in the habits platform teams need: stability, scalability, performance, automation, metrics-minded debugging, documentation, and cross-functional technical ownership.
+            Engineering leadership at LearnCard, systems and graphics programming, and hands-on AI/ML.
           </p>
         </div>
         <div className="card-grid">
@@ -269,7 +268,7 @@ const HomePage: FC = () => (
       <section className="content-section" id="work">
         <div className="section-heading">
           <p className="eyebrow">Selected work</p>
-          <h2>Relevant proof: production ownership, not demo projects.</h2>
+          <h2>Things I&apos;ve built.</h2>
         </div>
         <div className="stacked-grid">
           {projects.map((project) => (
@@ -337,23 +336,22 @@ const HomePage: FC = () => (
       <section className="content-section two-column" id="about">
         <article className="info-card info-card-large">
           <p className="eyebrow">About me</p>
-          <h2>I like the operational side of engineering.</h2>
+          <h2>I like making real things work.</h2>
           <p>
-            I enjoy the work that keeps a platform usable: debugging production issues, making
-            slow paths fast, improving deployment reliability, writing down what the team learns,
-            and building automation so the same problem does not keep coming back.
+            I&apos;ve programmed since writing TI-BASIC on my calculator in high school. Today I lead
+            engineering at LearnCard while staying hands-on in the code.
           </p>
           <p>
-            I am especially interested in infrastructure work that is close to the systems layer while still being software-defined: Linux, storage concepts, networking, virtualization, Kubernetes, metrics, alerting, and cloud operations.
+            Outside of that I spend my time on Rust, C++ and shader work, and on AI/ML: RLHF,
+            computer vision, local AI video generation, and agent-orchestrated building.
           </p>
           <p>
-            I am based in Lake Stevens, Washington, work well remotely, and can collaborate across
-            engineering, operations, and product stakeholders without needing heavy supervision.
+            I am based in Lake Stevens, Washington, and work remotely.
           </p>
         </article>
 
         <article className="info-card info-card-large">
-          <p className="eyebrow">Tech + domain fit</p>
+          <p className="eyebrow">Toolkit</p>
           <h2>Technical strengths</h2>
           <div className="badge-row">
             {stack.map((item) => (
@@ -363,20 +361,19 @@ const HomePage: FC = () => (
             ))}
           </div>
           <div className="availability-card">
-            <h3>Current learning focus</h3>
+            <h3>Current side project</h3>
             <p>
-              Deepening hands-on knowledge of storage operations, Linux storage internals, infrastructure observability, and cloud platform reliability.
+              Orch3stra, a self-hosted AI filmmaking studio built on local video models.
             </p>
           </div>
         </article>
       </section>
 
       <section className="content-section cta-section" id="contact">
-        <p className="eyebrow">Open to the right full-time role</p>
-        <h2>Looking for a platform-minded engineer who can learn fast and own outcomes?</h2>
+        <p className="eyebrow">Get in touch</p>
+        <h2>Want to talk shop?</h2>
         <p>
-          I bring production engineering judgment, performance instincts, documentation habits,
-          and a strong desire to go deeper in cloud infrastructure and platform operations.
+          Happy to chat about LearnCard, Rust, graphics, or local AI tooling.
         </p>
         <div className="hero-actions hero-actions-center">
           <a className="button button-primary" href="mailto:beeston.taylor@gmail.com">

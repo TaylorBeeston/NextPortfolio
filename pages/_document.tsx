@@ -16,9 +16,9 @@ class MyDocument extends Document {
           />
           <meta
             name="apple-mobile-web-app-title"
-            content="Taylor Beeston Portfolio"
+            content="Taylor Beeston"
           />
-          <meta name="description" content="Taylor Beeston's Portfolio" />
+          <meta name="description" content="VP of Engineering at the Learning Economy Foundation (LearnCard). I build in TypeScript/Node, Rust, C++, Ruby and shaders, and work on AI/ML: RLHF, computer vision, local AI video generation and agent-orchestrated software." />
           <meta name="format-detection" content="telephone=no" />
           <meta name="mobile-web-app-capable" content="yes" />
           <meta name="msapplication-TileColor" content="#90cdf4" />
@@ -55,10 +55,10 @@ class MyDocument extends Document {
 
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:url" content="https://taylorbeeston.dev" />
-          <meta name="twitter:title" content="Taylor Beeston" />
+          <meta name="twitter:title" content="Taylor Beeston | VP of Engineering at LearnCard" />
           <meta
             name="twitter:description"
-            content="Taylor Beeston's Portfolio Website"
+            content="VP of Engineering at the Learning Economy Foundation (LearnCard). I build in TypeScript/Node, Rust, C++, Ruby and shaders, and work on AI/ML: RLHF, computer vision, local AI video generation and agent-orchestrated software."
           />
           <meta
             name="twitter:image"
@@ -67,12 +67,12 @@ class MyDocument extends Document {
           <meta name="twitter:creator" content="@AshleysBrother" />
 
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Taylor Beeston Portfolio" />
+          <meta property="og:title" content="Taylor Beeston | VP of Engineering at LearnCard" />
           <meta
             property="og:description"
-            content="Taylor Beeston's Portfolio"
+            content="VP of Engineering at the Learning Economy Foundation (LearnCard). I build in TypeScript/Node, Rust, C++, Ruby and shaders, and work on AI/ML: RLHF, computer vision, local AI video generation and agent-orchestrated software."
           />
-          <meta property="og:site_name" content="Taylor Beeston Portfolio" />
+          <meta property="og:site_name" content="Taylor Beeston" />
           <meta property="og:url" content="https://taylorbeeston.dev" />
           <meta
             property="og:image"

@@ -7,7 +7,7 @@ import 'styles/index.css';
 const App: FC<AppProps> = ({ Component, pageProps }) => (
   <>
     <Head>
-      <title>Taylor Beeston</title>
+      <title>Taylor Beeston | VP of Engineering at LearnCard</title>
     </Head>
     <DarkModeContextProvider>
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
