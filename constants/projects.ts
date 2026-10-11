@@ -48,8 +48,6 @@ export const PROJECTS: Project[] = [
       coverage planning, a timeline and a finishing room, while a Node.js server and a headless Python
       worker drive WanGP renders with live progress, ETA estimates and recovery from failed or cancelled jobs.`,
     github: 'https://github.com/TaylorBeeston/orch3stra',
-    // Repo is not public yet; flip to true (or remove) once it is released.
-    githubPublic: false,
     stack: [
       TECHNOLOGIES.node,
       TECHNOLOGIES.javascript,

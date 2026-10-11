@@ -108,9 +108,7 @@ const projects: Project[] = [
     description:
       'A self-hosted AI filmmaking studio that turns a story and cast into a rendered short film using locally run video models through WanGP. A browser editor covers story, references, voices, coverage planning, a timeline and a finishing room, while a Node.js server and a headless Python worker drive renders with live progress, ETA estimates and recovery from failed or cancelled jobs.',
     stack: ['Node.js', 'JavaScript', 'Python', 'WanGP', 'FFmpeg', 'Playwright', 'LLM planning'],
-    // GitHub link hidden until the repo is public. On release, add:
-    // { label: 'GitHub', href: 'https://github.com/TaylorBeeston/orch3stra' }
-    links: [],
+    links: [{ label: 'GitHub', href: 'https://github.com/TaylorBeeston/orch3stra' }],
   },
   {
     title: 'Rust SSI / DIDKit Work',
