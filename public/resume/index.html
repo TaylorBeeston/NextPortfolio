@@ -168,6 +168,8 @@
         line-height: 1.28;
       }
 
+      .page a { color: inherit; text-decoration: none; }
+
       @page { size: letter; margin: 0; }
 
       @media print {
@@ -181,95 +183,77 @@
       <header class="top">
         <div>
           <h1>Taylor Beeston</h1>
-          <p class="headline">Platform Engineering Leader · Linux/Cloud Systems · Automation · Performance</p>
+          <p class="headline">Hands-on Engineering Leader · AI Training &amp; Code Evaluation (part-time contract)</p>
           <p class="summary">
-            Hands-on engineering leader with 5.5+ years shipping and operating production systems.
-            Focused on distributed-system problem solving, Linux-based workflows, cloud hosting concepts,
-            automation, observability, performance tuning, documentation, and cross-functional ownership.
+            Hands-on VP of Engineering with ~6 years of professional software engineering across TypeScript/Node, Rust, C++ and Ruby.
+            I debug production systems, tune performance and mentor a distributed team, and I already evaluate and write code-focused
+            LLM training data, including RLHF-style preference and rubric work. Available 15–20 hrs/week, fully remote, Pacific time.
           </p>
         </div>
         <div class="contact">
-          <div><strong>Location:</strong> Lake Stevens, Washington (remote)</div>
+          <div><strong>Location:</strong> Washington (Pacific Time) · Remote</div>
           <div><strong>Email:</strong> beeston.taylor@gmail.com</div>
-          <div><strong>Website:</strong> taylorbeeston.dev</div>
-          <div><strong>LinkedIn:</strong> linkedin.com/in/taylor-beeston</div>
-          <div><strong>GitHub:</strong> github.com/TaylorBeeston</div>
+          <div><strong>Website:</strong> <a href="https://taylorbeeston.dev">taylorbeeston.dev</a></div>
+          <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/taylor-beeston">linkedin.com/in/taylor-beeston</a></div>
+          <div><strong>GitHub:</strong> <a href="https://github.com/TaylorBeeston">github.com/TaylorBeeston</a></div>
         </div>
       </header>
 
       <section class="section">
-        <h2 class="section-title">Platform-aligned strengths</h2>
-        <div class="skills-grid">
-          <div class="skill-item"><strong>Linux + cloud operations</strong>Linux-based debugging workflows, cloud-hosted systems, deployment reliability, remote operations</div>
-          <div class="skill-item"><strong>Distributed systems + storage concepts</strong>Data-backed production systems, object/block storage concepts, caching, queues, bottleneck analysis</div>
-          <div class="skill-item"><strong>Automation + scripting</strong>TypeScript/Node, Python/Bash-style automation, CI/CD, internal tooling, repeatable workflows</div>
-          <div class="skill-item"><strong>Observability + collaboration</strong>Metrics-minded debugging, technical docs/runbooks, async communication, team leadership</div>
-        </div>
+        <h2 class="section-title">Skills</h2>
+        <ul>
+          <li><strong>Core:</strong> TypeScript / Node.js, Rust, React, code review, debugging &amp; profiling, performance tuning, Git, CI/CD, Linux</li>
+          <li><strong>Also:</strong> C++, Ruby, shader programming, Python/Bash scripting, WASM, Redis, MongoDB, Neo4j, AWS Lambda</li>
+          <li><strong>AI/ML:</strong> RLHF-style preference ranking &amp; rubric writing, LLM code evaluation, MLPs, convnets, basic computer vision, local AI video &amp; image generation (RTX 4090, Wan2GP)</li>
+        </ul>
       </section>
 
       <section class="section">
         <h2 class="section-title">Experience</h2>
         <div class="role-header">
-          <h3 class="role-title">Learning Economy Foundation</h3>
+          <h3 class="role-title">Learning Economy Foundation (LearnCard), Remote</h3>
           <div class="role-meta">
             VP of Engineering (Mar 2022 – Present)<br />
             Software Engineer (Aug 2020 – Mar 2022)
           </div>
         </div>
         <ul>
-          <li>Lead hands-on engineering for LearnCard, an open-source platform, across TypeScript/Node, React/Vite, Redis, MongoDB, Neo4j, AWS Lambda, CI/CD, and Rust-based SSI/DID tooling.</li>
-          <li>Promoted to VP of Engineering after growing into technical leadership while continuing to debug production issues, ship code, improve developer experience, and mentor 4–6 engineers.</li>
-          <li>Helped move a Meteor monolith toward modular frontend/backend systems, improving operational clarity and cutting CI deployment time by roughly 75%.</li>
-          <li>Delivered major performance improvements: reduced a 3+ minute production query to under 5 seconds and improved initial load performance from ~15 seconds to a few hundred milliseconds.</li>
-          <li>Built internal platform services and automation, including a translations microservice that reduced recurring spend from $500+/month to effectively negligible cost.</li>
-          <li>Developed reusable monorepo tooling, packaging workflows, and documentation that improved code reuse, build speed, onboarding, and day-to-day shipping velocity.</li>
+          <li>Lead hands-on engineering for <strong>LearnCard</strong>, an open-source lifelong-learning passport platform (large TypeScript/Node monorepo with Redis, MongoDB, Neo4j, AWS Lambda and Rust-based SSI/DID tooling).</li>
+          <li>Cut <strong>CI deployment time ~75%</strong> by reworking build tooling and release paths, and migrated local builds from webpack/CRA to esbuild (<strong>~100x faster</strong>).</li>
+          <li>Reduced a <strong>3+ minute production query to under 5 seconds</strong>, and cut initial load from <strong>~15 s to a few hundred ms</strong>.</li>
+          <li>Built a translations microservice that took recurring spend from <strong>$500+/month to negligible</strong>.</li>
+          <li>Helped migrate a Meteor monolith toward a modular frontend/backend architecture.</li>
+          <li>Promoted to VP of Engineering; mentor <strong>4–6 engineers</strong> while still shipping code, debugging production and writing documentation.</li>
         </ul>
-      </section>
-
-      <section class="section">
-        <h2 class="section-title">Platform + operations fit</h2>
-        <ul>
-          <li><strong>Stability, scalability, performance, cost:</strong> repeated track record making production systems faster, cheaper, easier to deploy, and easier for teams to reason about.</li>
-          <li><strong>Automation:</strong> strong internal tooling and CI/CD experience; comfortable turning repeated operational work into maintainable scripts, services, and docs.</li>
-          <li><strong>Reliability:</strong> metrics-minded debugger with production performance wins; interested in storage observability, Linux internals, and cloud platform reliability.</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2 class="section-title">Selected relevant work</h2>
-        <div class="projects">
-          <article class="project">
-            <h3>LearnCard production platform</h3>
-            <p>Active engineering lead for a large open-source monorepo powering credential and lifelong learning products.</p>
-          </article>
-          <article class="project">
-            <h3>Performance + platform modernization</h3>
-            <p>Faster deploys, faster builds, major query improvements, reduced infrastructure spend, and clearer workflows.</p>
-          </article>
-          <article class="project">
-            <h3>Rust SSI / DIDKit forks</h3>
-            <p>Hands-on work with Rust-based decentralized identity tooling used inside the LearnCard ecosystem.</p>
-          </article>
-          <article class="project">
-            <h3>Automation + AI workflows</h3>
-            <p>Built practical automation and agent workflows with a bias toward reliability and working systems over demos.</p>
-          </article>
+        <div class="role-header">
+          <h3 class="role-title">AI Training &amp; Code Evaluation, Freelance (multiple platforms)</h3>
+          <div class="role-meta">Independent Contractor (Feb 2024 – Present)</div>
         </div>
+        <ul>
+          <li>Evaluate and write code-focused LLM training data: check model-generated code for correctness, bugs, edge cases, security and style.</li>
+          <li>Do RLHF-style preference and rubric work, ranking competing responses and writing clear, evidence-based justifications.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Selected Projects</h2>
+        <ul>
+          <li><strong>Claudeball</strong> (<a href="https://taylorbeeston.github.io/claudeball">taylorbeeston.github.io/claudeball</a>): browser 3D baseball broadcast sim (TypeScript, three.js) built by orchestrating parallel Claude coding agents with per-task git worktrees and reviewer agents.</li>
+          <li><strong>LearnCard</strong> (<a href="https://github.com/learningeconomy/LearnCard">github.com/learningeconomy/LearnCard</a>): open-source credential and learning-record platform; engineering lead.</li>
+          <li><strong>Rust SSI / DIDKit forks</strong> (<a href="https://github.com/TaylorBeeston/ssi">ssi</a>, <a href="https://github.com/TaylorBeeston/didkit">didkit</a>): Rust/WASM decentralized-identity tooling, integrated as submodules in the LearnCard ecosystem.</li>
+          <li><strong>Shader / GPU compute work</strong> (<a href="https://github.com/TaylorBeeston/image-colorizer">image-colorizer</a>): hand-written ray-marched SDF (signed distance field) shape rendering, and Image Colorizer, a Rust/WebGPU wallpaper recolorizer built heavily on compute shaders.</li>
+          <li><strong>Orch3stra</strong>: self-hosted AI filmmaking studio that turns a story and cast into a rendered short film using locally run video models through WanGP (Node.js, Python worker, FFmpeg).</li>
+        </ul>
       </section>
 
       <section class="section">
         <h2 class="section-title">Education</h2>
         <div class="edu">
           <div>
-            <p><strong>Liberty University</strong> · Web Development Certificate</p>
-            <p>4.0 GPA · Built a full e-commerce web app from scratch</p>
+            <p><strong>Liberty University</strong>: Web Development Certificate (4.0 GPA)</p>
           </div>
-          <p>Jan 2019 – Aug 2019</p>
+          <p>2019</p>
         </div>
-        <p class="note">
-          Professional development focus: storage operations, Linux storage, distributed storage observability,
-          Kubernetes-adjacent infrastructure operations, and cloud platform reliability practices.
-        </p>
       </section>
     </main>
   </body>

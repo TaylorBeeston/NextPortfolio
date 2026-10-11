@@ -1,18 +1,6 @@
 # Taylor Beeston Portfolio
 
-Personal portfolio and resume site, currently tailored toward platform engineering, production systems, and infrastructure-adjacent roles.
-
-## Current focus
-
-This branch positions Taylor for platform/infrastructure-adjacent engineering roles:
-
-- Linux/cloud systems
-- Distributed-system problem solving
-- Storage operations interest and Ceph ramp path
-- Automation and scripting
-- Metrics/observability mindset
-- Performance tuning
-- Technical documentation and remote collaboration
+Personal portfolio and resume site for Taylor Beeston, VP of Engineering at the Learning Economy Foundation (LearnCard).
 
 ## Key files
 
